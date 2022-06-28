@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray);
+}
+main{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+}
+section{
+    text-align: left;
+    width: 50%;
+    justify-content: space-between;
+}
+img, h1, p{
+    padding: 10%;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive; 
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+#sedans{
+    background-color: var(--orange);
+}
+#suvs{
+    background-color: var(--darkcyan);
+}
+#luxury{
+    background-color: var(--verydarkcyan);
+}
+input{
+    background-color: var(--gray);
+    display: block;
+    margin: 0 auto;
+    padding: 5%;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+#btnsedan{
+    color: var(--orange);
+    border-color: var(--orange);
+    margin-top: 1rem;
+}
+#btnsedan:focus{
+    background-color: var(--orange);
+    border-color: var(--gray);
+    border-width: 0.2rem;
+    color: var(--gray); 
+}
+#btnsuv{
+    color: var(--darkcyan);
+    border-color: var(--darkcyan);
+    margin-top: 1rem;
+}
+#btnsuv:focus{
+    background-color: var(--darkcyan);
+    border-color: var(--gray);
+    border-width: 0.2rem; 
+    color: var(--gray);
+}
+#btnlux{
+    color: var(--verydarkcyan);
+    border-color: var(--verydarkcyan);
+    margin-top: 3rem;
+}
+#btnlux:focus{
+    background-color: var(--verydarkcyan);
+    border-color: var(--gray);
+    border-width: 0.2rem; 
+    color: var(--gray);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (max-width: 414px){
+    
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    input{
+        margin-top: 0;
+        margin-bottom: 8%;
+        font-size: 0.9rem;
+    }
+    footer{
+        bottom: -60%;
+    }
+
+}
