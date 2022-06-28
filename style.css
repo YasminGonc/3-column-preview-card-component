@@ -45,12 +45,16 @@ h1{
 }
 #sedans{
     background-color: var(--orange);
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
 }
 #suvs{
     background-color: var(--darkcyan);
 }
 #luxury{
     background-color: var(--verydarkcyan);
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 input{
     background-color: var(--gray);
@@ -116,6 +120,20 @@ footer{
         margin-top: 0;
         margin-bottom: 8%;
         font-size: 0.9rem;
+    }
+    #sedans, #luxury{
+        border-bottom-left-radius: 0rem;
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius: 0rem;
+    }
+    #sedans{
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    #luxury{
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
     }
     footer{
         bottom: -60%;
